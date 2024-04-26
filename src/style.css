@@ -1,4 +1,109 @@
+@font-face {
+  font-family: 'Rocksalt';
+  src: url('./assets/fonts/RockSalt-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Walter-Turncoat';
+  src: url(./assets/fonts/WalterTurncoat-Regular.ttf);
+}
+
+* {
+  font-family: Walter-Turncoat, serif;
+  font-weight: 700;
+}
+
+body {
+  background-color: rgb(73, 72, 72);
+  margin: 0;
+  /* max-width: 1000px; */
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* .content-wrapper {
+  min-width: 950px;
+} */
+
 .hello {
     color: orange;
     text-align: center;
-  }
+}
+
+.logo-wrapper {
+  /* background-color: rgb(73, 72, 72); */
+  background-image: 
+    linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./assets/images/brick-2906556_1920.jpg);
+  /* background-size: 100%; */
+  display: flex;
+  /* justify-content: space-around; */
+  height: 20em;
+  align-items: start;
+  gap: 2em;
+  /* border-bottom: 5em solid whitesmoke; */
+}
+
+.logo-image {
+  background-image: url(./assets/images/patrice-chef.png);
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position-x: -1 ;
+  height: 320px;
+  min-width: 350px;
+  /* z-index: 0; */
+}
+
+.logo-title-wrapper {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-title {
+  font-family: Rocksalt, serif;
+  font-size: 6em;
+  margin: 0;
+}
+
+.logo-subtitle {
+ margin-top: -1em;
+ letter-spacing: .6em;
+ /* font-size: 1.3em; */
+ color: white;
+}
+
+.navmenu-wrapper {
+  background-color: aliceblue;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  /* z-index: 1; */
+}
+
+.navmenu {
+  background-color: aliceblue;
+  border: none;
+  width: 10em;
+  font-size: 1.1em;
+  /* z-index: 1; */
+  /* border-bottom: 6px solid white; */
+}
+
+.navmenu:hover {
+  /* border: 6px solid orange; */
+  background-color: orange;
+  color: aliceblue;
+  font-size: 2em;
+  transition: 150ms;
+}
+
+.content-wrapper {
+  background-color: rgb(72,72,72);
+  height: 100px;
+}

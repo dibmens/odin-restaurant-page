@@ -7,18 +7,21 @@
   <meta name="description" content="<%= htmlWebpackPlugin.options.metaDesc %>" />
 </head>
 <body>
-    <h1><%= htmlWebpackPlugin.options.header %></h1>
-    <header>
-      <nav>
-        <button>Home</button>
-        <button>Menu</button>
-        <button>About</button>
-        <button>Contacts</button>
-      </nav>
+    <header class="logo-wrapper">
+      <div class="logo-image"></div>
+      <div class="logo-title-wrapper">
+        <h1 class="logo-title">O'NEAL's</h1>
+        <h2 class="logo-subtitle">grilling the world</h2>
+      </div>
     </header>
-    <div id="content">
-      <img src="<%= require('./dibmens.png') %>" />
+    <nav class="navmenu-wrapper">
+      <button class="navmenu">PHILOSOPHY</button>
+      <button class="navmenu">MENU</button>
+      <button class="navmenu">MEDIA</button>
+      <button class="navmenu">CONTACT</button>
+    </nav>
+    <div id="content-wrapper">
+    
     </div>
-
 </body>
 </html>
