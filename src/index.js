@@ -10,12 +10,3 @@ buttons.forEach(button => button.addEventListener('click', () => {
     alert('testo');
 }));
 
-// const myIcon = new Image();
-// myIcon.src = Icon;
-
-// document.querySelector(`div`).appendChild(myIcon);
-
-// MENU
-// Cheetah Heels
-// Blue Whale Blowhole
-// 
