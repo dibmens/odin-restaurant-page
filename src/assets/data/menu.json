@@ -1,10 +1,62 @@
 [
     {
-        "course": "Aperitif",
+        "course": "Aperitifs",
         "menuItems": [
             {
                 "name": "Hummingbird Pate",
+                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they can be enjoyed as a rich, creamy spread on a melba toast."
+            },
+            {
+                "name": "Giraffe Neck Gyro",
+                "info": "The iconic neck of the giraffe makes it the tallest terrestrial animal in the world and, conveniently, a natural fit for a doner grill, resulting in succulently tender entree."
+            }
+        ]
+    },
+    {
+        "course": "Soups",
+        "menuItems": [
+            {
+                "name": "Leopard Spot Stew",
                 "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+            },
+            {
+                "name": "Cheetah Heel Broth",
+                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+            }
+        ]
+    },
+    {
+        "course": "Main Courses",
+        "menuItems": [
+            {
+                "name": "Gorilla Bicep Roast",
+                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+            },
+            {
+                "name": "Stuffed Whale Blowhole",
+                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+            }
+        ]
+    },
+    {
+        "course": "Desserts",
+        "menuItems": [
+            {
+                "name": "Baby Seal Eye Ice Cream",
+                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+            },
+            {
+                "name": "Lemur Paw Flan",
+                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+            }
+        ]
+    },
+    {
+        "course": "Wine",
+        "menuItems": [
+            {
+                "name": "Shipwreck Vintage",
+                "info": "An exclusive collection of wines rescued from prewar era shipwrecks"
             }
         ]
     }
