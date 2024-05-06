@@ -8,11 +8,6 @@
   src: url(./assets/fonts/Cardo-Regular.ttf);
 }
 
-@font-face {
-  font-family: 'Cardo-Bold';
-  src: url(./assets/fonts/Cardo-Bold.ttf);
-}
-
 * {
   font-family: Cardo, serif;
   font-weight: 700;
@@ -26,10 +21,10 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: url(./assets/images/backgrounds/2.jpg);
-  background-size: 2600px;
+  width: 100vw;
+  background-image: url(./assets/images/backgrounds/3.jpg);
   background-position: center;
-  transition: background-image 3s;
+  transition: background-image 4s;
 }
 
 .hello {
@@ -42,12 +37,12 @@ body {
   background-size: 110%;
   display: flex;
   justify-content: center;
-  height: 10em;
+  min-height: 10em;
   width: 100vw;
   max-width: 65em;
   align-items: center;
   gap: 3em;
-  background-color:  rgba(0,0,0,0.7);
+  background-color:  rgba(0,0,0,0.6);
 }
 
 .logo-image {
@@ -119,39 +114,46 @@ body {
 }
 
 #content {
-  padding-top: 2em;
-  background-color: rgba(0,0,0,0.7);
-  background-size: 100%;
+  padding-top: 1em;
+  background-color: rgba(0,0,0,0.6);
+  /* background-size: 100%; */
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
   justify-content: center;
+  /* justify-items: flex-start; */
+  /* height: 75em; */
   max-width: 65em;
+  gap: 1.5em;
+  text-align: center;
 }
 
-.course {
-  text-align: center;
+.course-wrapper {
+  max-width: 28em;
+}
+
+.course-wrapper:last-child {
+  max-width: 30em;
+}
+
+h2 {
   font-family: Rocksalt;
   font-size: 1em;
   letter-spacing: .2em;
   color: orange;
   margin: .5em;
 }
-.menu-item {
-  text-align: center;
-  padding: .8em;
-}
 
-.menu-item-name {
-  font-family: Cardo, serif;
+h3 {
   font-weight: normal;
-  font-size: 1.4em;
+  font-size: 1.3em;
   letter-spacing: .1em;
   margin: 0;
+  padding: .5em;
 }
 
-.menu-item-info {
+p {
   font-weight: normal;
   margin: 0;
-  max-width: 30em;
 }
