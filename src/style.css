@@ -8,6 +8,12 @@
   src: url(./assets/fonts/Cardo-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Cardo-Bold';
+  src: url(./assets/fonts/Cardo-Bold.ttf);
+}
+
+
 * {
   font-family: Cardo, serif;
   font-weight: 700;
@@ -27,11 +33,6 @@ body {
   transition: background-image 4s;
 }
 
-.hello {
-    color: orange;
-    text-align: center;
-}
-
 .logo-wrapper {
   background-position-y: -3em;
   background-size: 110%;
@@ -39,10 +40,10 @@ body {
   justify-content: center;
   min-height: 10em;
   width: 100vw;
-  max-width: 65em;
+  max-width: 63em;
   align-items: center;
   gap: 3em;
-  background-color:  rgba(0,0,0,0.6);
+  background-color:  rgba(0,0,0,0.7);
 }
 
 .logo-image {
@@ -56,7 +57,6 @@ body {
   border-radius: 100%;
   background-color: orange;
   margin-left: 3em ;
-  
 }
 
 .logo-title-wrapper {
@@ -69,16 +69,22 @@ body {
 
 .logo-title {
   font-family: Rocksalt, serif;
+  color: orange;
   font-size: 3.3em;
   letter-spacing: .3em;
   margin: 0;
   margin-top: -.3em;
+  margin-bottom: -.2em;
 }
 
-.logo-subtitle {
- margin-top: -.7em;
- letter-spacing: .55em;
- font-size: .8em;
+.michelin-stars {
+  background-image: url(./assets/images/michelin-stars.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -.5em;
+  height: 3em;
+  width: 7em;
 }
 
 @media screen and (max-width: 780px){
@@ -93,14 +99,14 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
-  max-width: 65em;
-  gap: 2em;
+  max-width: 63em;
+  gap: 1em;
 }
 
 .nav-tab {
   background-color: rgba(0,0,0,0.0);
   border: none;
-  width: 10em;
+  width: 11.5em;
   font-size: 1.1em;
   color: aliceblue;
 }
@@ -115,18 +121,34 @@ body {
 
 #content {
   padding-top: 1em;
-  background-color: rgba(0,0,0,0.6);
-  /* background-size: 100%; */
+  background-color: rgba(0,0,0,0.7);
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
-  /* justify-items: flex-start; */
-  /* height: 75em; */
-  max-width: 65em;
+  width: 100vw;
+  max-width: 63em;
   gap: 1.5em;
   text-align: center;
+  
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  max-width: 42em;
+  gap: .8em;
+}
+
+.home-wrapper > p:first-of-type {
+  
+  font-size: 1.2em;
+  letter-spacing: .05em;
+  line-height: 2em;
+  text-align: justify;
 }
 
 .course-wrapper {
@@ -156,4 +178,23 @@ h3 {
 p {
   font-weight: normal;
   margin: 0;
+}
+
+.review {
+  text-align: left;
+  border-left: 2px solid orange;
+  padding-left: 1em;
+  margin-top: .7em;
+  font-style: italic;
+}
+
+.review + p {
+  color: orange;
+  margin-right: 1em;
+  margin-left:auto;
+}
+
+.review:hover {
+  margin-left: -1em;
+  transition: 800ms;
 }

@@ -1,5 +1,6 @@
 import './style.css';
-import Menu from './assets/data/menu.json';
+import Menu from './data/menu.json';
+import Reviews from './data/reviews.json';
 
 import Img1 from './assets/images/backgrounds/1.jpg';
 import Img2 from './assets/images/backgrounds/2.jpg';
@@ -14,7 +15,15 @@ document.querySelector(`h1`).classList.add(`hello`);
 let buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => button.addEventListener('click', () => {
-    button.classList.contains("menu") ? showMenu() : content.innerText = "";
+    if(button.classList.contains("menu")){
+      content.innerText = "";
+      showMenuPage();
+    } else if (button.classList.contains("home")){
+      content.innerText = "";
+      showHomePage();
+    } else {
+      content.innerText = "";
+    }
 }));
 
 
@@ -34,7 +43,7 @@ setInterval(randomizeBackground,15000);
 
 
 
-function showMenu(){
+function showMenuPage(){
   Menu.forEach((courseEntry)=> {
   let div = document.createElement(`div`);
   div.className = "course-wrapper";
@@ -54,3 +63,32 @@ function showMenu(){
   })
 });
 }
+
+
+function showHomePage(){
+  let div = document.createElement(`div`);
+  div.className = "home-wrapper";
+  div.innerHTML = 
+  `
+  <h3>THE LAST WORD IN HUMAN EXCESS</h3>
+  <p>Forget the pursuit of excellence, the golden foils and design cutlery. 
+  What we desire can't be found in boutique wine cellars, family butchers' 
+  or alpine gardens. The meal is circumstantial. We explore the limits of 
+  excess. Seek out the most fragile animals on the planet, steal their most 
+  defining feature- their very essence- and feast on it unapologetically.</p>
+  `;
+  content.append(div);
+
+  Reviews.forEach((reviewEntry) => {
+    let reviewParagraph = document.createElement(`p`);
+    let authorParagraph = document.createElement(`p`);
+    reviewParagraph.className = "review";
+    reviewParagraph.innerText = `${reviewEntry["review"]}`;
+    authorParagraph.innerText = `${reviewEntry["author"]}`;
+    div.append(reviewParagraph);
+    div.append(authorParagraph);
+  });
+};
+
+
+// showHomePage();
