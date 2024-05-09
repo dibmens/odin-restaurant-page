@@ -149,6 +149,7 @@ body {
   letter-spacing: .05em;
   line-height: 2em;
   text-align: justify;
+  padding-bottom: 1em;
 }
 
 .course-wrapper {
@@ -158,6 +159,8 @@ body {
 .course-wrapper:last-child {
   max-width: 30em;
 }
+
+
 
 h2 {
   font-family: Rocksalt;
@@ -184,17 +187,22 @@ p {
   text-align: left;
   border-left: 2px solid orange;
   padding-left: 1em;
-  margin-top: .7em;
   font-style: italic;
 }
 
 .review + p {
   color: orange;
-  margin-right: 1em;
-  margin-left:auto;
+  margin: -.6em 1em .6em 1em ;
+  /* margin-top: ; */
+  margin-left: auto;
 }
 
 .review:hover {
   margin-left: -1em;
   transition: 800ms;
+}
+
+iframe {
+  border-radius: 1em;
+  border: 2px solid orange;
 }
