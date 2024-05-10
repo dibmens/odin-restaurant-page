@@ -6,32 +6,40 @@ import Img1 from './assets/images/backgrounds/1.jpg';
 import Img2 from './assets/images/backgrounds/2.jpg';
 import Img3 from './assets/images/backgrounds/3.jpg';
 import Img4 from './assets/images/backgrounds/4.jpg';
+import Img5 from './assets/images/backgrounds/5.jpg';
+import Img6 from './assets/images/backgrounds/6.jpg';
 
 
 const content = document.querySelector(`#content`);
-
-document.querySelector(`h1`).classList.add(`hello`);
-
-let buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('button');
 
 buttons.forEach(button => button.addEventListener('click', () => {
     if(button.classList.contains("menu")){
       content.innerText = "";
+      buttons.forEach(button => button.classList.remove(`highlight`));
+      button.classList.add(`highlight`);
       showMenuPage();
     } else if (button.classList.contains("home")){
       content.innerText = "";
+      buttons.forEach(button => button.classList.remove(`highlight`));
+      button.classList.add(`highlight`);
       showHomePage();
     } else if(button.classList.contains("media")){
       content.innerText = "";
+      buttons.forEach(button => button.classList.remove(`highlight`));
+      button.classList.add(`highlight`);
       showMediaPage();
+    } else if(button.classList.contains("book")){
+      content.innerText = "";
+      buttons.forEach(button => button.classList.remove(`highlight`));
+      button.classList.add(`highlight`);
+      showBookingPage();
     }
 }));
 
-
-
 function randomizeBackground(){
     const body = document.querySelector(`body`);
-    const backgrounds = [Img1, Img2, Img3, Img4];
+    const backgrounds = [Img1, Img2, Img3, Img4, Img5, Img6];
     const randomize = () => {
         return Math.trunc(Math.random()*backgrounds.length);
     } 
@@ -98,10 +106,10 @@ function showMediaPage(){
     That's so f****d up. They need their eyes!
   </h2>
   <h3>PATRICE O'NEAL<br>1969 - 2011</h3>
-  <p>A New York native stand-up comedian, Patrice came to prominence for 
-    his hilarious guest roles on various comedy shows throughout the 00s. Armed with a 
+  <p>A New York native and a stand-up comedian, Patrice came to prominence for 
+    his many guest spots on various comedy shows throughout the 00s. Armed with a 
     sharp tongue, he rarely made fast friends, but those who got to know 
-    him well saw a man with a big heart and still miss him. The restaurant 
+    him, saw a man with a big heart and strong principles. The restaurant 
     menu is inspired by one such guest appearance.
   </p>
   <p>Disclaimer- video contains strong language</p>
@@ -113,3 +121,20 @@ function showMediaPage(){
   </iframe>`;
   content.append(div);
 };
+
+function showBookingPage(){
+let div = document.createElement(`div`);
+div.className = "home-wrapper";
+div.innerHTML =
+`<h3>DARE TO EXCEED THE EXCESS</h3>
+ <h2>O'NEAL'S<br>
+ Royal Venue<br>
+ THE LINE, Neom<br>
+ Saudi Arabia<br>
+ +966 666 666 669</h2>
+ <p>We are fully booked 5 years ahead. Inquire to become a bidder
+ in our monthly auction for new openings. All reservations are
+ fully paid in advance and non-refundable. <span>Your anonymity is guaranteed.</span>
+ </p>`;
+content.append(div);
+}
