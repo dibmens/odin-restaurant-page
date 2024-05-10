@@ -8,12 +8,6 @@
   src: url(./assets/fonts/Cardo-Regular.ttf);
 }
 
-@font-face {
-  font-family: 'Cardo-Bold';
-  src: url(./assets/fonts/Cardo-Bold.ttf);
-}
-
-
 * {
   font-family: Cardo, serif;
   font-weight: 700;
@@ -133,6 +127,7 @@ body {
   gap: 1.5em;
   text-align: center;
   margin-bottom: 0;
+  
 }
 
 .home-wrapper {
@@ -140,12 +135,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 1em; */
   max-width: 42em;
   gap: .8em;
   overflow: hidden;
-  /* margin-bottom: 0; */
-  /* padding-bottom: 0; */
+  
 }
 
 .home-wrapper > p:first-of-type {
@@ -165,8 +158,6 @@ body {
 .course-wrapper:last-child {
   max-width: 30em;
 }
-
-
 
 h2 {
   font-family: Rocksalt;
@@ -199,7 +190,6 @@ p {
 .review + p {
   color: orange;
   margin: -.6em 1em .6em 1em ;
-  /* margin-top: ; */
   margin-left: auto;
 }
 
