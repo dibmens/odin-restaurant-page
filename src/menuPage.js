@@ -1,6 +1,7 @@
 import Menu from './data/menu.json';
 
 export default function showMenuPage(contentDiv){
+    contentDiv.innerText = "";
     Menu.forEach((courseEntry)=> {
     let div = document.createElement(`div`);
     div.className = "course-wrapper";

@@ -1,8 +1,8 @@
 import './style.css';
-import homePage from './homePage';
-import menuPage from './menuPage';
-import mediaPage from './mediaPage';
-import bookingPage from './bookingPage';
+import showHomePage from './homePage';
+import showMenuPage from './menuPage';
+import showMediaPage from './mediaPage';
+import showBookingPage from './bookingPage';
 
 import Img1 from './assets/images/backgrounds/1.jpg';
 import Img2 from './assets/images/backgrounds/2.jpg';
@@ -11,33 +11,13 @@ import Img4 from './assets/images/backgrounds/4.jpg';
 import Img5 from './assets/images/backgrounds/5.jpg';
 import Img6 from './assets/images/backgrounds/6.jpg';
 
-
-const content = document.querySelector(`#content`);
 const buttons = document.querySelectorAll('button');
+const content = document.querySelector(`#content`);
 
-buttons.forEach(button => button.addEventListener('click', () => {
-    if(button.classList.contains("menu")){
-      content.innerText = "";
-      buttons.forEach(button => button.classList.remove(`highlight`));
-      button.classList.add(`highlight`);
-      menuPage(content);
-    } else if (button.classList.contains("home")){
-      content.innerText = "";
-      buttons.forEach(button => button.classList.remove(`highlight`));
-      button.classList.add(`highlight`);
-      homePage(content);
-    } else if(button.classList.contains("media")){
-      content.innerText = "";
-      buttons.forEach(button => button.classList.remove(`highlight`));
-      button.classList.add(`highlight`);
-      mediaPage(content);
-    } else if(button.classList.contains("book")){
-      content.innerText = "";
-      buttons.forEach(button => button.classList.remove(`highlight`));
-      button.classList.add(`highlight`);
-      bookingPage(content);
-    }
-}));
+function styleActiveButton(buttonClass){
+  buttons.forEach(button => button.classList.remove(`highlight`));
+  document.querySelector(buttonClass).classList.add(`highlight`);
+};
 
 function randomizeBackground(){
     const body = document.querySelector(`body`);
@@ -48,5 +28,24 @@ function randomizeBackground(){
     body.style.backgroundImage = `url(${backgrounds[randomize()]})`;
 };
 
-setInterval(randomizeBackground,15000);
-homePage(content);
+(function PageController(){
+  
+  setInterval(randomizeBackground,15000);
+  showHomePage(content);
+
+  buttons.forEach(button => button.addEventListener('click', () => {
+    if(button.classList.contains("menu")){
+      styleActiveButton(`.menu`);
+      showMenuPage(content);
+    } else if (button.classList.contains("home")){
+      styleActiveButton(`.home`);
+      showHomePage(content);
+    } else if(button.classList.contains("media")){
+      styleActiveButton(`.media`);
+      showMediaPage(content);
+    } else if(button.classList.contains("book")){
+      styleActiveButton(`.book`);
+      showBookingPage(content);
+    }
+  }));
+})();

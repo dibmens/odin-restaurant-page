@@ -22,7 +22,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-image: url(./assets/images/backgrounds/3.jpg);
+  background-image: url(./assets/images/backgrounds/4.jpg);
   background-position: center;
   transition: background-image 4s;
 }
@@ -191,11 +191,6 @@ p {
   color: orange;
   margin: -.6em 1em .6em 1em ;
   margin-left: auto;
-}
-
-.review:hover {
-  margin-left: -1em;
-  transition: 800ms;
 }
 
 iframe {

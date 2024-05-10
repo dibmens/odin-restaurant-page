@@ -1,4 +1,5 @@
 export default function showMediaPage(contentDiv){
+    contentDiv.innerText = "";
     let div = document.createElement(`div`);
     div.className = "home-wrapper";
     div.innerHTML = 

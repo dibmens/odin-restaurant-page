@@ -1,4 +1,5 @@
 export default function showBookingPage(contentDiv){
+    contentDiv.innerText = "";
     let div = document.createElement(`div`);
     div.className = "home-wrapper";
     div.innerHTML =

@@ -2,6 +2,7 @@
 import Reviews from './data/reviews.json';
 
 export default function showHomePage(contentDiv){
+    contentDiv.innerText = "";
     let div = document.createElement(`div`);
     div.className = "home-wrapper";
     div.innerHTML = 
