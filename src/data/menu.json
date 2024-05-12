@@ -8,7 +8,20 @@
             },
             {
                 "item": "Giraffe Neck Gyro",
-                "info": "The iconic neck of the giraffe makes it the tallest terrestrial animal in the world and, conveniently, a natural fit for a doner grill, resulting in succulently tender entree."
+                "info": "The iconic neck of the giraffe makes it the tallest terrestrial animal on the planet and, conveniently, a natural fit for a doner style grill, giving you a succulently tender entree."
+            }
+        ]
+    },
+    {
+        "course": "Main Courses",
+        "menuItems": [
+            {
+                "item": "Gorilla Bicep Steak",
+                "info": "The majestic silverback is the most powerful member in the primate kingdom. But there is one primate who's unquenchable taste for a succulent braised steak cannot be overwhelmed with mere brawn."
+            },
+            {
+                "item": "Stuffed Whale Blowhole",
+                "info": "It takes years for the whale to reach the size where its blowhole can be harvested and stuffed with buttery garlic shrimp it spent years feasting on in pristine pristine arctic waters."
             }
         ]
     },
@@ -17,37 +30,25 @@
         "menuItems": [
             {
                 "item": "Leopard Spot Stew",
-                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+                "info": "The leopard blends within the sunbeam splattered bush to lie in wait for the unsuspecting prey. When the moment is right, the spices leap out of the rosemary bouquet to take you by surprise."
             },
             {
-                "item": "Cheetah Heel Broth",
-                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+                "item": "Cheetah Heel Soup",
+                "info": "The fastest terrestrial animal, a cheetah does't have much meat on it to enjoy. Its heel marrow stock, however, blended with sun dried spices, is guaranteed to give your appetite a running start."
             }
         ]
     },
-    {
-        "course": "Main Courses",
-        "menuItems": [
-            {
-                "item": "Gorilla Bicep Roast",
-                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
-            },
-            {
-                "item": "Stuffed Whale Blowhole",
-                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
-            }
-        ]
-    },
+    
     {
         "course": "Desserts",
         "menuItems": [
             {
                 "item": "Baby Seal Eye Ice Cream",
-                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+                "info": "Just like the cute defenseless look of a baby seal melts our hearts, this dessert will melt on your tongue and fill you with a sweet warm feelings."
             },
             {
                 "item": "Lemur Paw Flan",
-                "info": "Smallest of all avians, the critically endangered Hummingbird holds very little meat on its own. Scores must be caught before they are enjoyed as a rich, creamy spread on a melba toast."
+                "info": "A lemur expertly navigates the treetops to gain unique access to the hard to reach exotic fruit. With this dish the fruits of Madagascar are softly palmed right onto your taste buds."
             }
         ]
     },
@@ -56,7 +57,7 @@
         "menuItems": [
             {
                 "item": "Shipwreck Vintage",
-                "info": "An exclusive collection of wines rescued from prewar era shipwrecks"
+                "info": "A unique collection of wines rescued from prewar era shipwrecks"
             }
         ]
     }

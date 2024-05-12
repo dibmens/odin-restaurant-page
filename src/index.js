@@ -13,6 +13,7 @@ function styleActiveButton(buttonClass){
   document.querySelector(buttonClass).classList.add(`highlight`);
 };
 
+
 function navigatePages(){
   buttons.forEach(button => button.addEventListener('click', () => {
     if(button.classList.contains("menu")){
