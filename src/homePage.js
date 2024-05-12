@@ -9,7 +9,7 @@ export default function showHomePage(contentDiv){
     `<h3>THE LAST WORD IN HUMAN EXCESS</h3>
     <p>Forget the pursuit of excellence, the golden foils and design cutlery. 
     What we desire can't be found in boutique wine cellars, family butchers' 
-    or alpine gardens. The meal is circumstantial. We explore the limits of 
+    or alpine gardens. <span>The meal is circumstantial</span>. We explore the limits of 
     excess. Seek out the most fragile animals on the planet, steal their most 
     defining feature- their very essence- and feast on it unapologetically.</p>`;
     contentDiv.append(div);
