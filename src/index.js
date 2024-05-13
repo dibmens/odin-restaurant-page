@@ -3,7 +3,7 @@ import showHomePage from './homePage';
 import showMenuPage from './menuPage';
 import showMediaPage from './mediaPage';
 import showBookingPage from './bookingPage';
-import shuffleBackground from './background';
+import { preloadBackgrounds, shuffleBackground } from './background';
 
 const buttons = document.querySelectorAll('button');
 const content = document.querySelector(`#content`);
@@ -32,6 +32,7 @@ function navigatePages(){
   }));
 }
 
-setInterval(shuffleBackground,15000);
+preloadBackgrounds(`.preload`);
+setInterval(shuffleBackground,17000);
 showHomePage(content);
 navigatePages();

@@ -7,8 +7,20 @@ import Img6 from './assets/images/backgrounds/6.jpg';
 
 const images = [Img1, Img2, Img3, Img4, Img5, Img6];
 
-export default function shuffleBackground(){
+function preloadBackgrounds(preloadDiv){
+    const div = document.querySelector(preloadDiv);
+    div.style.opacity = `0`;
+    images.forEach((image) => {
+        const stagingDiv = document.createElement(`div`);
+        stagingDiv.style.backgroundImage = `url(${image})`;
+        div.append(stagingDiv);
+    });
+}
+
+function shuffleBackground(){
     const background = document.querySelector("body");
     const randomize = () => Math.trunc(Math.random()*images.length);
     background.style.backgroundImage = `url(${images[randomize()]})`;
 };
+
+export {preloadBackgrounds,shuffleBackground};

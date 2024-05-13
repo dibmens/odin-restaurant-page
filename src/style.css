@@ -24,7 +24,7 @@ body {
   width: 100vw;
   background-image: url(./assets/images/backgrounds/5.jpg);
   background-position: center;
-  transition: background-image ease-in-out 4s;
+  transition: background-image ease-in-out 5s;
 }
 
 .logo-wrapper {
